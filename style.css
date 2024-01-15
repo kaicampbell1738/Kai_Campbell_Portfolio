@@ -35,7 +35,7 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
+    height: 17vh;
 }
 
 .nav-links {
@@ -175,4 +175,60 @@ section {
 
 .btn-container {
     gap: 1rem;
+}
+
+/* About Section  */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 3rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 3rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: -5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 4;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.4rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    justify-content: center;
+    margin: 0.5rem;
+    margin-bottom: auto 2px;
+}
+
+.section-container {
+    gap: 2rem;
+    height: 80%;
+}
+
+.title {
+    margin-bottom: 4rem;
+}
+
+.text-container {
+    margin-top: 2rem;
 }
