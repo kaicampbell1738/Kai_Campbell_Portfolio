@@ -224,7 +224,7 @@ section {
 .section-container {
     gap: 2rem;
     height: 80%;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 15rem;
 }
 
@@ -249,7 +249,8 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
 }
 
 .article-container{
@@ -270,4 +271,31 @@ section {
 
 article .icon {
     cursor: default;
+}
+
+/* Projects */
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(255, 255, 255);
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-button {
+    color: black;
+    border-color: rgb(163, 163, 163);
 }
