@@ -1,17 +1,10 @@
 @media screen and (max-width: 1400px) {
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
     .about-containers {
         flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .nav-links {
-        display: none;
-    }
 
     #experience, .experience-details-container {
         margin-top: 2rem;
@@ -59,6 +52,14 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
+    .nav-links {
+        gap: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    .nav-links2 li {
+        display: inline-block;
+        margin-right: 8px; 
+    }    
     .about-containers, .contact-info-upper-container, .button-container {
         flex-wrap: wrap;
     }
@@ -70,9 +71,6 @@
     }
     .skills-sub-title {
         font-size: 1.25 rem;
-    }
-    .logo {
-        font-size: 1.5rem;
     }
     .profile-pic-container {
         width: auto;
@@ -90,5 +88,8 @@
     }
     .text-container {
         text-align: justify;
+    }
+    .logo {
+        font-size: 18px;
     }
 }
