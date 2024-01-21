@@ -427,8 +427,6 @@ input:checked + .slider:before {
     background: linear-gradient(45deg, #2196F3, #4CAF50) border-box;
 }
 
-
-
 .section-container {
     gap: 2rem;
     height: 80%;
@@ -520,12 +518,42 @@ article .icon {
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
-    background: white;
+    background: white; /* Set the background color for light mode */
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.4rem solid;
-    border-color: rgb(163, 163, 163);
     margin: 2rem auto;
     padding: 0.5rem;
+    position: relative;
+    transition: border 0.8s ease; /* Add a transition for a smooth effect */
+}
+
+.contact-info-upper-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 2rem;
+    border: 0.8rem solid transparent;
+    background: linear-gradient(45deg, #4CAF50, #2196F3) border-box;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.contact-info-upper-container:hover::before {
+    border: 0.8rem solid;
+    background: linear-gradient(45deg, #2196F3, #4CAF50) border-box;
+}
+
+body.dark-mode .contact-info-upper-container {
+    background: black; /* Set the background color for dark mode */
+}
+
+body.dark-mode .contact-info-upper-container::before {
+    background: linear-gradient(45deg, #2196F3, #4CAF50) border-box;
 }
 
 .contact-info-container {
