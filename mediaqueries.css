@@ -15,6 +15,9 @@
     .arrow {
         display: none;
     }
+    .switch {
+        margin-bottom: 2rem;
+    }
     section, .section-container {
         height: fit-content;
     }
@@ -22,6 +25,11 @@
         margin: 0 5%;
     }
     .profile-pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-pic-container {
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
@@ -71,11 +79,6 @@
     }
     .skills-sub-title {
         font-size: 1.25 rem;
-    }
-    .profile-pic-container {
-        width: auto;
-        height: 46vh;
-        justify-content: center;
     }
     #about {
         margin-top: 10rem;
