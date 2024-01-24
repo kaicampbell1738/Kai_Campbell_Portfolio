@@ -1,58 +1,118 @@
-@media screen and (max-width: 1400px) {
-    .about-containers {
-        flex-wrap: wrap;
+@media screen and (max-width: 2000px) {
+    #profile .profile-text {
+        margin-left: 8rem;
+        margin-bottom: 10rem;
+        font-size: 0px;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
+    /* Other styles remain unchanged */
 
-    #experience, .experience-details-container {
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+    #profile .profile-text {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 800px;
+        font-size: 0px;
+        transition: margin-left 0.5s ease;
+    }
+
+    #profile .title,
+    #profile .button-container,
+    #profile .socials-container {
+        text-align: center;
+    }
+
+    #profile .button-container,
+    #profile .socials-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #profile .title {
+        margin-bottom: 1rem;
+        font-size: 3rem; /* Adjust font size as needed */
+    }
+
+    #profile .button1 {
+        width: auto; /* Allow the button to adjust its width based on content */
+        font-size: 18px; /* Adjust font size as needed */
+    }
+
+    #experience,
+    .experience-details-container {
         margin-top: 2rem;
     }
-    #profile, .section-container {
+
+    #profile,
+    .section-container {
         display: block;
     }
+
     .arrow {
         display: none;
     }
+
     .switch {
         margin-bottom: 2rem;
     }
-    section, .section-container {
+
+    section,
+    .section-container {
         height: fit-content;
     }
+
     section {
         margin: 0 5%;
     }
-    .profile-pic-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
+
+    #profile.parallax {
+        background-size: 500px 450px;
+        background-position: center bottom;
     }
-    .about-pic-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
+
     .about-containers {
         margin-top: 0;
     }
+
+    .about-pic-container {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto 2rem;
+    }
+
     .section-container {
         margin-top: 2rem;
     }
     .skills-details-container {
         margin-top: 2rem;
     }
+
+    .contact-info-container p {
+        margin: 0.5rem;
+    }
 }
 
-@media screen and (max-width: 600px) {
-    #contact, footer {
-        height: 40vh;
+@media screen and (max-width: 700px) {
+    .logo {
+        font-size: 20px;
+        margin-left: 20px;
     }
+
     #profile {
         height: 83vh;
         margin-bottom: 0;
     }
+
+    #profile .profile-text-p2 {
+        font-size: 3.0rem;
+    }
+
     article {
         font-size: 1rem;
     }
@@ -61,7 +121,7 @@
         margin-bottom: 2rem;
     }
     .nav-links {
-        gap: 0.5rem;
+        gap: 1rem;
         margin-left: 0.5rem;
     }
     .nav-links2 li {
@@ -92,7 +152,9 @@
     .text-container {
         text-align: justify;
     }
-    .logo {
-        font-size: 18px;
+
+    #profile .profile-text {
+        margin-left: 0rem;
+        margin-bottom: 10rem;
     }
 }

@@ -17,6 +17,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(100, 100, 100);
+    transition: filter 1.5s ease; 
+}
+
 /* dark mode settings */
 
 body {
@@ -69,6 +79,7 @@ body {
   body.dark-mode .button1 {
     color: white;
     box-shadow: 0 8px 12px rgba(188, 195, 202, 0.1), 0 3px 6px rgba(0, 0, 0, 0.12);
+    transition: color 1.5s ease;
   }
 
   body.dark-mode .button1:hover {
@@ -103,14 +114,13 @@ body.dark-mode .contact-icon {
     transition: filter 1.5s ease; /* Add a transition for a smooth effect */
 }
 
-
-html {
-    scroll-behavior: smooth;
+body.dark-mode #profile .button1 {
+    color: white;
 }
 
-p {
-    color: rgb(100, 100, 100);
-    transition: filter 1.5s ease; 
+body.dark-mode #profile .button1:hover {
+    color: white;
+    /* Add any additional styling for hover state if needed */
 }
 
 /* transition */
@@ -169,33 +179,67 @@ section {
 
 /* Profile */
 
+
 #profile {
     display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+    justify-content: left;
+    align-items: flex-end;
+    height: 90vh;
     margin-bottom: 6rem;
+    background: url('/assets/IMG_4908.png') right bottom/contain no-repeat;
+    position: relative;
+    overflow: hidden;
+    background-size: 50%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.profile-container {
+#profile.parallax {
+    min-height: 1110px;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0px;
+    margin-bottom: 6rem; /* Adjust this value based on your header height */
+}
+
+#profile .profile-text {
+    margin-left: 20rem;
+    margin-bottom: 10rem;
+    font-size: 0px;
+    transition: margin-left 0.5s ease;
+}
+
+#profile .profile-text-p1 {
+    font-size: 3.5rem;
+}
+
+#profile .title {
+    font-size: 4rem;
+    text-align: left;
+}
+
+#profile .profile-text-p2 {
+    font-size: 3.5rem;
+}
+
+#profile .button-container {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center; /* Align items vertically */
+    justify-content: left;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
-.profile-pic-container {
-    display: flex;
-    height: 350px;
-    width: 350px;
-    margin-right: auto 20px;
-}
-
-.profile-pic-container img {
-    max-width: 100%; /* Make sure the image doesn't exceed its container width */
-    height: auto; /* Maintain the aspect ratio */
+#profile .button1 {
+    width: 15rem;
+    height: 4rem;
+    font-size: 20px;
+    color: black
 }
 
 .profile-text {
@@ -227,7 +271,7 @@ section {
 
 .socials-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 1rem;
     gap: 1rem;
 }
@@ -265,6 +309,7 @@ body.dark-mode .icon {
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+    transition: color 1.5s ease;
   }
   
   .button1:hover {
@@ -370,6 +415,32 @@ input:checked + .slider:before {
     margin: auto 20px;
 }
 
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    position: absolute;
+    transform-origin: 50% 100%; /* Rotate around the bottom center */
+    color: white; /* Adjust text color as needed */
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.text:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.text:nth-child(2) {
+    transform: rotate(60deg);
+}
+
 .about-containers {
     gap: 3rem;
 }
@@ -395,6 +466,7 @@ input:checked + .slider:before {
 }
 
 .details-container {
+    font-size: 20px;
     padding: 1.5rem;
     flex: 4;
     background: white;
@@ -437,6 +509,7 @@ input:checked + .slider:before {
 .text-container {
     margin-top: 2rem;
     line-height: 2;
+    font-size: 20px;
 }
 
 /* Skills */
@@ -619,3 +692,12 @@ footer {
 footer p {
     text-align: center;
 }
+
+spline-viewer {
+    pointer-events: none;
+}
+
+#contact {
+    position: relative;
+  }
+  
