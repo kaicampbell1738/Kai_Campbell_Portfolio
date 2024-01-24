@@ -692,12 +692,3 @@ footer {
 footer p {
     text-align: center;
 }
-
-spline-viewer {
-    pointer-events: none;
-}
-
-#contact {
-    position: relative;
-  }
-  
