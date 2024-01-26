@@ -104,13 +104,18 @@
         margin-left: 20px;
     }
 
-    #profile {
+    /* #profile {
         height: 83vh;
         margin-bottom: 0;
-    }
+    } */
 
     #profile .profile-text-p2 {
         font-size: 3.0rem;
+    }
+
+    #profile .profile-text {
+        margin-left: 0rem;
+        margin-bottom: 10rem;
     }
 
     article {
@@ -151,10 +156,5 @@
     }
     .text-container {
         text-align: justify;
-    }
-
-    #profile .profile-text {
-        margin-left: 0rem;
-        margin-bottom: 10rem;
     }
 }
