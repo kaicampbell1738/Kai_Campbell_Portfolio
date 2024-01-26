@@ -96,6 +96,14 @@ body.dark-mode .contact-info-upper-container {
     transition: background-color 1.5s ease; /* Add a transition for a smooth effect */
 }
 
+body.dark-mode .contact-info-upper-container {
+    background: black; /* Set the background color for dark mode */
+}
+
+body.dark-mode .contact-info-upper-container::before {
+    background: linear-gradient(45deg, #2196F3, #4CAF50) border-box;
+}
+
 body.dark-mode .contact-info-container a {
     color: white;
 }
@@ -628,6 +636,7 @@ article .icon {
     border-radius: 2rem;
     border: 0.8rem solid transparent;
     background: linear-gradient(45deg, #4CAF50, #2196F3) border-box;
+    transition: border 0.8s ease; /* Add a transition for a smooth effect */
     -webkit-mask:
         linear-gradient(#fff 0 0) padding-box,
         linear-gradient(#fff 0 0);
@@ -637,14 +646,6 @@ article .icon {
 
 .contact-info-upper-container:hover::before {
     border: 0.8rem solid;
-    background: linear-gradient(45deg, #2196F3, #4CAF50) border-box;
-}
-
-body.dark-mode .contact-info-upper-container {
-    background: black; /* Set the background color for dark mode */
-}
-
-body.dark-mode .contact-info-upper-container::before {
     background: linear-gradient(45deg, #2196F3, #4CAF50) border-box;
 }
 
