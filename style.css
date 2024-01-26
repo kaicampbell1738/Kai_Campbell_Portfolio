@@ -573,11 +573,30 @@ article .icon {
 .project-title {
     margin: 1rem;
     color: black;
+    margin-bottom: 0px;
 }
 
 .project-button {
     color: black;
     border-color: rgb(163, 163, 163);
+}
+
+.project-tags {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center tags horizontally */
+    margin-bottom: 20px;
+}
+
+.project-tags span {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 4px 8px;
+    margin: 4px;
+    border-radius: 4px;
 }
 
 /* contact */
